@@ -1,0 +1,9 @@
+image: python:3.6-alpine
+
+stages:
+  - test
+
+unit_test:
+  stage: test
+  script:
+    - python -m unittest discover
